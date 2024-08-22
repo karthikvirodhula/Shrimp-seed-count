@@ -20,6 +20,7 @@ if image_file is not None:
 
     # Thresholding
     thresh=cv2.adaptiveThreshold(img_gray,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY,29,10)
+     st.image(thresh, caption="Binary Image", use_column_width=True)
 
     # Find contours
     contours, hierarchy = cv2.findContours(thresh, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
