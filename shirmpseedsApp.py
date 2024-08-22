@@ -5,7 +5,7 @@ import streamlit as st
 st.title("Shrimp Seed Counter")
 
 # Streamlit file uploader
-image_file = st.file_uploader("Upload Image", type=["jpg", "jpeg", "png"])
+image_file = st.file_uploader("Upload Image", type=["jpg", "jpeg", "png",'image','webp'])
 
 if image_file is not None:
     # Convert uploaded file to OpenCV image format
